@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaishnavi Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+
+body{
+
+background:
+
+radial-gradient(circle at top left,
+rgba(59,130,246,.12),
+transparent 28%),
+
+
+radial-gradient(circle at top right,
+rgba(168,85,247,.12),
+transparent 30%),
+
+
+radial-gradient(circle at bottom left,
+rgba(236,72,153,.08),
+transparent 30%),
+
+
+linear-gradient(
+135deg,
+#020617 0%,
+#000000 45%,
+#0f172a 100%
+);
+
+
+color:white;
+
+overflow-x:hidden;
+
+min-height:100vh;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:500px;
+
+height:500px;
+
+background:rgba(255,255,255,.02);
+
+filter:blur(140px);
+
+top:-100px;
+
+right:-100px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+}
+
+
+/* container */
+
+.container{
+
+width:85%;
+
+margin:auto;
+
+}
+
+
+
+/* navbar */
+
+nav{
+
+display:flex;
+
+justify-content:flex-end;
+
+gap:18px;
+
+padding:35px 0;
+
+}
+
+
+nav a{
+
+text-decoration:none;
+
+color:#e5e7eb;
+
+padding:14px 28px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.03);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+transition:.4s;
+
+}
+
+
+nav a:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 20px rgba(255,255,255,.15);
+
+}
+
+
+
+
+/* hero */
+
+.hero{
+
+min-height:80vh;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:60px;
+
+}
+
+
+
+
+/* left */
+
+.left h1{
+
+font-size:78px;
+
+line-height:1.05;
+
+font-weight:700;
+
+background:linear-gradient(90deg,#ffffff,#d1d5db,#9ca3af);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:0 0 40px rgba(255,255,255,.08);
+
+margin-bottom:20px;
+
+}
+
+
+.role{
+
+font-size:24px;
+
+color:#9ca3af;
+
+margin-bottom:30px;
+
+}
+
+
+.info{
+
+max-width:540px;
+
+font-size:15px;
+
+line-height:2;
+
+color:#6b7280;
+
+}
+
+
+
+/* photo */
+
+.profile{
+
+width:400px;
+
+height:400px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+border:2px solid rgba(255,255,255,.18);
+
+box-shadow:
+
+0 0 30px rgba(255,255,255,.08),
+
+0 0 70px rgba(59,130,246,.12),
+
+0 0 120px rgba(168,85,247,.10);
+
+
+}
+
+
+.profile:hover{
+
+transform:scale(1.04);
+
+}
+
+
+.profile img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+object-position:center 20%;
+
+}
+
+
+
+
+/* floating effect */
+
+@keyframes float{
+
+0%{transform:translateY(0px);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0px);}
+
+}
+
+
+
+
+/* footer */
+
+.footer{
+
+text-align:center;
+
+padding-bottom:35px;
+
+font-size:13px;
+
+color:#6b7280;
+
+}
+
+
+.social{
+
+margin-top:18px;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+}
+
+
+.social a{
+
+text-decoration:none;
+
+color:#9ca3af;
+
+transition:.4s;
+
+position:relative;
+
+}
+
+
+.social a:hover{
+
+color:white;
+
+text-shadow:0 0 12px white;
+
+}
+
+
+
+
+/* mobile */
+
+@media(max-width:768px){
+
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+
+.left h1{
+
+font-size:46px;
+
+}
+
+
+.profile{
+
+width:260px;
+
+height:260px;
+
+}
+
+
+nav{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+
+
+
+
+
+<nav>
+
+<a href="about.html">
+
+About
+
+</a>
+
+
+
+<a href="project.html">
+
+Projects
+
+</a>
+
+
+
+<a href="assets/resume.pdf" target="_blank">
+
+Resume
+
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+
+
+
+
+<div class="left">
+
+
+
+<h1>
+
+Hi, I'm Vaishnavi Sase
+
+</h1>
+
+
+
+
+<div class="role">
+
+AI Engineer | Python Developer | ML Enthusiast
+
+</div>
+
+
+
+
+
+<p class="info">
+
+Recent BE graduate in Artificial Intelligence
+& Data Science with hands-on experience in
+Python Development, Machine Learning,
+IoT and Data Analytics.
+
+Passionate about solving real-world
+problems through technology.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="profile">
+
+<img src="assets/image.png">
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<div class="footer">
+
+
+<p>
+
+© 2026 - Vaishnavi Sase
+
+</p>
+
+
+
+
+<div class="social">
+
+
+
+
+<a href="https://www.linkedin.com/in/vaishnavi-sase-40aa082a0">
+
+LinkedIn
+
+</a>
+
+
+
+
+
+<a href="https://github.com/vaishnavisase73">
+
+GitHub
+
+</a>
+
+
+
+
+
+<a href="mailto:vaishnavisase73@gmail.com">
+
+Email
+
+</a>
+
+
+
+
+
+<a href="tel:+917219614825">
+
+Contact
+
+</a>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
